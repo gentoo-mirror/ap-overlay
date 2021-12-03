@@ -13,7 +13,7 @@ MY_PN="${PN%%-*}"
 MY_P="${MY_PN}-${PV}"
 
 if [[ ${PV} == "9999" ]] ; then
-	EGIT_REPO_URI="https://source.winehq.org/git/wine.git"
+	EGIT_REPO_URI="https://github.com/lutris/wine.git"
 	EGIT_BRANCH="master"
 	inherit git-r3
 	SRC_URI=""
