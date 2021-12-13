@@ -11,7 +11,7 @@ inherit autotools eapi7-ver estack eutils flag-o-matic gnome2-utils multilib mul
 MY_PN="${PN%%-*}"
 MY_P="${MY_PN}-${PV}"
 
-	EGIT_REPO_URI="https://github.com/Tk-Glitch/wine-tkg/commits/master"
+	EGIT_REPO_URI="https://github.com/Tk-Glitch/wine-tkg"
 	EGIT_COMMIT="2619f12064d13c922dddd7533867229127461e0a"
 	inherit git-r3
 	SRC_URI=""
@@ -287,9 +287,7 @@ pkg_setup() {
 }
 
 src_unpack() {
-	if [[ ${PV} == "9999" ]] ; then
 		EGIT_CHECKOUT_DIR="${S}" git-r3_src_unpack
-	fi
 
 	default
 
