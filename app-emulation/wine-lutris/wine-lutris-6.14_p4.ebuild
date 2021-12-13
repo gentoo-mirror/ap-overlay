@@ -34,7 +34,7 @@ S="${WORKDIR}/wine-lutris-$UPSTREAM_NAME"
 GWP_V="20210925"
 PATCHDIR="${WORKDIR}/gentoo-wine-patches"
 
-DESCRIPTION="Free implementation of Windows(tm) on Unix, without external patchsets"
+DESCRIPTION="Free implementation of Windows(tm) on Unix, Lutris patchset"
 HOMEPAGE="https://www.winehq.org/"
 SRC_URI="${SRC_URI}
 	https://dev.gentoo.org/~sarnex/distfiles/wine/gentoo-wine-patches-${GWP_V}.tar.xz
