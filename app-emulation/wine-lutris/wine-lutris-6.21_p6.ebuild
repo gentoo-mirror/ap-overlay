@@ -26,7 +26,6 @@ else
 		UPSTREAM_NAME="${MAJOR_V}"
 	fi
 	SRC_URI="https://github.com/lutris/wine/archive/refs/tags/lutris-${UPSTREAM_NAME}.tar.gz"
-	einfo $SRC_URI
 	KEYWORDS="-*"
 fi
 S="${WORKDIR}/wine-lutris-$UPSTREAM_NAME"
