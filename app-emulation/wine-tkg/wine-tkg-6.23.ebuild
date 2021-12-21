@@ -15,7 +15,7 @@ MY_P="${MY_PN}-${PV}"
 	EGIT_COMMIT="2619f12064d13c922dddd7533867229127461e0a"
 	inherit git-r3
 	SRC_URI=""
-	KEYWORDS="-* ~amd64 ~x86"
+	KEYWORDS="-*"
 
 S="${WORKDIR}/${MY_P}"
 
