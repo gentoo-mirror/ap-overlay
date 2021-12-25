@@ -27,7 +27,7 @@ else
 		UPSTREAM_NAME="${MAJOR_V}"
 	fi
 	SRC_URI="https://github.com/lutris/wine/archive/refs/tags/lutris-${UPSTREAM_NAME}.tar.gz"
-	KEYWORDS="-* ~amd64 ~x86"
+	KEYWORDS="-* amd64 x86"
 fi
 S="${WORKDIR}/wine-lutris-$UPSTREAM_NAME"
 
