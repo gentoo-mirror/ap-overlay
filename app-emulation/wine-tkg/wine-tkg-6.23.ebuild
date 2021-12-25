@@ -15,7 +15,7 @@ MY_P="${MY_PN}-${PV}"
 	EGIT_COMMIT="2619f12064d13c922dddd7533867229127461e0a"
 	inherit git-r3
 	SRC_URI=""
-	KEYWORDS="-*"
+	KEYWORDS="-* ~amd64 ~x86"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -513,6 +513,7 @@ pkg_postinst() {
 		ewarn "the existence of a .NET implementation, so you will likely need"
 		ewarn "to install an external one, like via winetricks"
 	fi
+	ewarn "app-emulation/wine-lutris seems to be more stable than this package; it's reccomended to use that instead."
 }
 
 pkg_prerm() {
