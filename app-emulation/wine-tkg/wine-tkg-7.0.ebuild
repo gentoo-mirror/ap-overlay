@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -12,17 +12,17 @@ MY_PN="${PN%%-*}"
 MY_P="${MY_PN}-${PV}"
 
 	EGIT_REPO_URI="https://github.com/Tk-Glitch/wine-tkg"
-	EGIT_COMMIT="b987f624af319330a6b014536f234f323e2bcc1a"
+	EGIT_COMMIT="8205d63f3e14cd0d7cedbf8edf0e17f8f1e8e3f8"
 	inherit git-r3
 	SRC_URI=""
-	KEYWORDS="-*"
+	KEYWORDS="-* ~amd64 ~x86"
 
 S="${WORKDIR}/${MY_P}"
 
 GWP_V="20211122"
 PATCHDIR="${WORKDIR}/gentoo-wine-patches"
 
-DESCRIPTION="Free implementation of Windows(tm) on Unix, TkG patchset"
+DESCRIPTION="Free implementation of Windows(tm) on Unix, with TkG patchset."
 HOMEPAGE="https://www.winehq.org/"
 SRC_URI="${SRC_URI}
 	https://dev.gentoo.org/~sarnex/distfiles/wine/gentoo-wine-patches-${GWP_V}.tar.xz
@@ -30,7 +30,7 @@ SRC_URI="${SRC_URI}
 
 LICENSE="LGPL-2.1"
 SLOT="${PV}"
-IUSE="+abi_x86_32 +abi_x86_64 +alsa capi cups custom-cflags dos elibc_glibc +fontconfig +gecko gphoto2 gssapi gstreamer kerberos kernel_FreeBSD ldap mingw +mono mp3 netapi nls odbc openal opencl +opengl osmesa oss +perl pcap prelink pulseaudio +realtime +run-exes samba scanner sdl selinux +ssl test +threads +truetype udev +udisks +unwind usb v4l vkd3d vulkan +X +xcomposite xinerama"
+IUSE="+abi_x86_32 +abi_x86_64 +alsa capi cups custom-cflags dos elibc_glibc +fontconfig +gecko gphoto2 gssapi gstreamer kerberos ldap mingw +mono mp3 netapi nls odbc openal opencl +opengl osmesa oss +perl pcap prelink pulseaudio +realtime +run-exes samba scanner sdl selinux +ssl test +threads +truetype udev +udisks +unwind usb v4l vkd3d vulkan +X +xcomposite xinerama"
 REQUIRED_USE="|| ( abi_x86_32 abi_x86_64 )
 	X? ( truetype )
 	elibc_glibc? ( threads )
@@ -231,7 +231,7 @@ pkg_pretend() {
 	wine_build_environment_check || die
 
 	# Verify OSS support
-	if use oss && ! use kernel_FreeBSD; then
+	if use oss; then
 		if ! has_version ">=media-sound/oss-4"; then
 			eerror "You cannot build wine with USE=oss without having support from a"
 			eerror "FreeBSD kernel or >=media-sound/oss-4 (only available through external repos)"
@@ -513,7 +513,6 @@ pkg_postinst() {
 		ewarn "the existence of a .NET implementation, so you will likely need"
 		ewarn "to install an external one, like via winetricks"
 	fi
-	ewarn "app-emulation/wine-lutris seems to be more stable than this package; it's reccomended to use that instead."
 }
 
 pkg_prerm() {
