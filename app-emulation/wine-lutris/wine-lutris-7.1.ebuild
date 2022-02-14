@@ -28,7 +28,6 @@ else
 	SRC_URI="https://github.com/lutris/wine/archive/refs/tags/lutris-${UPSTREAM_NAME}.tar.gz"
 	KEYWORDS="-* ~amd64 ~x86"
 fi
-S="${WORKDIR}/${MY_P}"
 
 GWP_V="20211122"
 PATCHDIR="${WORKDIR}/gentoo-wine-patches"
