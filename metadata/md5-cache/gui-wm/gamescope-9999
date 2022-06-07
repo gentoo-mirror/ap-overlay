@@ -1,14 +1,14 @@
 BDEPEND=dev-util/cmake >=dev-util/meson-0.59.4 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/stb gui-libs/wlroots x11-base/xwayland x11-libs/libX11 x11-libs/libXdamage x11-libs/libXcomposite x11-libs/libXrender x11-libs/libXext x11-libs/libXxf86vm x11-libs/libXtst x11-libs/libXres x11-libs/libdrm media-libs/vulkan-loader dev-util/vulkan-headers dev-libs/wayland dev-libs/wayland-protocols x11-libs/libxkbcommon sys-libs/libcap media-libs/libsdl2 media-libs/mesa[gbm] x11-libs/pixman dev-libs/libinput sys-auth/seatd x11-libs/libxcb x11-libs/xcb-util-wm dev-util/glslang media-video/pipewire
+DEPEND=dev-libs/stb gui-libs/wlroots[X] x11-base/xwayland x11-libs/libX11 x11-libs/libXdamage x11-libs/libXcomposite x11-libs/libXrender x11-libs/libXext x11-libs/libXxf86vm x11-libs/libXtst x11-libs/libXres x11-libs/libdrm media-libs/vulkan-loader dev-util/vulkan-headers dev-libs/wayland dev-libs/wayland-protocols x11-libs/libxkbcommon sys-libs/libcap media-libs/libsdl2 media-libs/mesa[gbm] x11-libs/pixman dev-libs/libinput sys-auth/seatd x11-libs/libxcb x11-libs/xcb-util-wm dev-util/glslang media-video/pipewire
 DESCRIPTION=Gamescope
 EAPI=8
 HOMEPAGE=https://github.com/Plagman/gamescope
 INHERIT=meson git-r3
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=dev-libs/stb gui-libs/wlroots x11-base/xwayland x11-libs/libX11 x11-libs/libXdamage x11-libs/libXcomposite x11-libs/libXrender x11-libs/libXext x11-libs/libXxf86vm x11-libs/libXtst x11-libs/libXres x11-libs/libdrm media-libs/vulkan-loader dev-util/vulkan-headers dev-libs/wayland dev-libs/wayland-protocols x11-libs/libxkbcommon sys-libs/libcap media-libs/libsdl2 media-libs/mesa[gbm] x11-libs/pixman dev-libs/libinput sys-auth/seatd x11-libs/libxcb x11-libs/xcb-util-wm dev-util/glslang media-video/pipewire
+RDEPEND=dev-libs/stb gui-libs/wlroots[X] x11-base/xwayland x11-libs/libX11 x11-libs/libXdamage x11-libs/libXcomposite x11-libs/libXrender x11-libs/libXext x11-libs/libXxf86vm x11-libs/libXtst x11-libs/libXres x11-libs/libdrm media-libs/vulkan-loader dev-util/vulkan-headers dev-libs/wayland dev-libs/wayland-protocols x11-libs/libxkbcommon sys-libs/libcap media-libs/libsdl2 media-libs/mesa[gbm] x11-libs/pixman dev-libs/libinput sys-auth/seatd x11-libs/libxcb x11-libs/xcb-util-wm dev-util/glslang media-video/pipewire
 SLOT=0
 SRC_URI=https://github.com/nothings/stb/archive/refs/heads/master.zip -> stb-master.zip
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	toolchain-funcs	fd9cde67030b26e479eeadaced488253	multilib	4fbbbc98f236f1b43acd99476bc3cd85	python-utils-r1	648fe6a039e87233d7f48da72cadb76f	meson	8f48ffde53174aba67239f0da61ac9d3	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
-_md5_=74adfc254d93c932e71d44373af5ee3b
+_md5_=aeae83323cce4bab28b132a81f98463c
