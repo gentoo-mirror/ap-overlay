@@ -37,7 +37,7 @@ KEYWORDS=""
 
 DEPEND="
 	dev-libs/stb
-	gui-libs/wlroots
+	gui-libs/wlroots[X]
 	x11-base/xwayland
 	x11-libs/libX11
 	x11-libs/libXdamage
