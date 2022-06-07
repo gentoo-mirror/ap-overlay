@@ -39,6 +39,32 @@ DEPEND="
 	dev-libs/stb
 	gui-libs/wlroots
 	x11-base/xwayland
+	x11-libs/libX11
+	x11-libs/libXdamage
+	x11-libs/libXcomposite
+	x11-libs/libXrender
+	x11-libs/libXext
+	x11-libs/libXxf86vm
+	x11-libs/libXtst
+	x11-libs/libXres
+	x11-libs/libdrm
+	media-libs/vulkan-loader
+	dev-util/vulkan-headers
+	dev-libs/wayland
+	dev-libs/wayland-protocols
+	x11-libs/libxkbcommon
+	sys-libs/libcap
+	media-libs/libsdl2
+	media-libs/mesa[gbm]
+	x11-libs/pixman
+	dev-libs/libinput
+	sys-auth/seatd
+	x11-libs/libxcb
+	x11-libs/xcb-util-wm
+	dev-util/glslang
+	media-video/pipewire
 "
 RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND="
+	dev-util/cmake
+"
