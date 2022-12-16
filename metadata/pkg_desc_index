@@ -1,4 +1,4 @@
 app-emulation/wine-lutris 6.14_p4 6.21_p5 6.21_p6 7.1 7.2 7.2_p2: Free implementation of Windows(tm) on Unix, without external patchsets
-app-emulation/wine-mono 6.3.0: Wine Mono is a replacement for the .NET runtime and class libraries in Wine
+app-emulation/wine-mono 6.3.0 7.1.1: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-tkg 6.23 7.0_rc2 7.0_rc6 7.0: Free implementation of Windows(tm) on Unix, with TkG patchset.
 gui-wm/gamescope 9999: Gamescope
